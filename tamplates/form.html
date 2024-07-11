@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Car Price Predictor</title>
+     <style>
+      body {
+           background-color:#fff5;
+           background-image:url('https://cdn.glitch.global/43a4ce8c-b800-4162-8fa9-7ef6b7e10bef/d757d88989884c38843b7db942f5e797.jpg?v=1720608761689');
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-position: center;
+           fliter:blur(10px);
+          }
+       table{
+          position:relative;
+          top:10px;
+          width:30%;
+          height:20%;
+          #for_blur
+          background:transparent;
+          backdrop-filter: blur(20px);
+          border:2px solid black;
+          border-radius: 6px;
+          font-weight:20px;
+          color:#fff;
+          }
+    </style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="background-image">
+		<img src="https://cdn.glitch.global/43a4ce8c-b800-4162-8fa9-7ef6b7e10bef/d757d88989884c38843b7db942f5e797.jpg?v=1720608761689" alt="Background Image">
+	</div>
+	
+	<form>
+		<h2>Car Price Predictor</h2>
+		
+		<label for="car-name">Car Name:</label>
+		<select id="car-name" name="car-name">
+			<option value="">Select a car</option>
+			<option value="Toyota">Toyota</option>
+			<option value="Honda">Honda</option>
+			<option value="Ford">Ford</option>
+			<option value="Nissan">Nissan</option>
+			<option value="Volkswagen">Volkswagen</option>
+			<option value="Other">Other</option>
+		</select><br><br>
+		
+		<label for="year">Year:</label>
+		<select id="year" name="year">
+			<option value="">Select a year</option>
+			<option value="2022">2022</option>
+			<option value="2021">2021</option>
+			<option value="2020">2020</option>
+			<option value="2019">2019</option>
+			<option value="2018">2018</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+			<option value="2015">2015</option>
+			<option value="Other">Other</option>
+		</select><br><br>
+		
+		<label for="selling-price">Selling Price:</label>
+		<input type="number" id="selling-price" name="selling-price" min="0" max="1000000" step="1000"><br><br>
+		
+		<label for="present-price">Present Price:</label>
+		<input type="number" id="present-price" name="present-price" min="0" max="1000000" step="1000"><br><br>
+		
+		<label for="kms-driven">Kms Driven:</label>
+		<input type="number" id="kms-driven" name="kms-driven" min="0" max="500000" step="1000"><br><br>
+		
+		<label for="fuel-type">Fuel Type:</label>
+		<select id="fuel-type" name="fuel-type">
+			<option value="">Select a fuel type</option>
+			<option value="Petrol">Petrol</option>
+			<option value="Diesel">Diesel</option>
+			<option value="Electric">Electric</option>
+			<option value="Hybrid">Hybrid</option>
+			<option value="Other">Other</option>
+		</select><br><br>
+		
+		<label for="transmission">Transmission:</label>
+		<select id="transmission" name="transmission">
+			<option value="">Select a transmission</option>
+			<option value="Automatic">Automatic</option>
+			<option value="Manual">Manual</option>
+			<option value="Semi-Automatic">Semi-Automatic</option>
+			<option value="Other">Other</option>
+		</select><br><br>
+		
+		<label for="owner">Owner:</label>
+		<select id="owner" name="owner">
+			<option value="">Select an owner</option>
+			<option value="First Owner">First Owner</option>
+			<option value="Second Owner">Second Owner</option>
+			<option value="Third Owner">Third Owner</option>
+			<option value="Other">Other</option>
+		</select><br><br>
+		
+		<button type="submit">Predict Price</button>
+	</form>
+	
+	<div id="prediction-result">
+		<h2>Predicted Price:</h2>
+		<p id="predicted-price"></p>
+	</div>
+	
+<!-- 	<script src="script.js"></script> -->
+</body>
+</html>
