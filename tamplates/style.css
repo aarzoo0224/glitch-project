@@ -1,0 +1,69 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+.background-image {
+  position: fixed; /* changed from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100vw; /* changed from 100% to 100vw */
+  height: 100vh;
+  z-index: -1;
+}
+
+.background-image img {
+  width: 100vw; /* changed from 100% to 100vw */
+  height: 100vh;
+  object-fit: cover;
+  object-position: center; /* added to center the image */
+
+}
+
+form {
+	width: 50%;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input, select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+#prediction-result {
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f0f0f0;
+}
+
+#predicted-price {
+	font-size: 24px;
+	font-weight: bold;
+	color: #00698f;
+}
